@@ -16,5 +16,10 @@ namespace html_editor
         {
             InitializeComponent();
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            webBrowser1.DocumentText = richTextBox1.Text;
+        }
     }
 }
