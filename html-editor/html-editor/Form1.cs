@@ -21,5 +21,10 @@ namespace html_editor
         {
             webBrowser1.DocumentText = richTextBox1.Text;
         }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
